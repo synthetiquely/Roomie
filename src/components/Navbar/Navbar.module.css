@@ -1,0 +1,12 @@
+:root {
+  --navbar-container-background-color: hsl(71, 80%, 76%);
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  height: 46px;
+  background-color: var(--navbar-container-background-color);
+}

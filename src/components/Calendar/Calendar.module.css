@@ -1,0 +1,9 @@
+:root {
+  --calendar-container-background-color: hsl(224, 75%, 76%);
+}
+
+.container {
+  min-height: 100%;
+  min-width: 100vw;
+  background-color: var(--calendar-container-background-color);
+}

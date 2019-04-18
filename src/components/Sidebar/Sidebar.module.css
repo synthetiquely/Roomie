@@ -1,0 +1,8 @@
+:root {
+  --sidebar-container-background-color: hsl(115, 74%, 76%);
+}
+
+.container {
+  grid-area: aside;
+  background-color: var(--sidebar-container-background-color);
+}

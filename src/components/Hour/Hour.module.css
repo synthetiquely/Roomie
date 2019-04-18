@@ -1,0 +1,26 @@
+:root {
+  --hour-text-font-size: 11px;
+  --hour-line-color: hsl(0, 0%, 90%);
+}
+
+.container {
+  position: relative;
+  width: 49px;
+  text-align: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  background-color: var(--hour-line-color);
+}
+
+.text {
+  font-size: var(--hour-text-font-size);
+  line-height: 13px;
+  letter-spacing: 0.4px;
+}

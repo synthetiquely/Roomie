@@ -1,0 +1,10 @@
+:root {
+  --timeslot-container-background-color: hsl(0, 0%, 75%);
+  --timeslot-count: 16;
+}
+
+.container {
+  background-color: var(--timeslot-container-background-color);
+  width: calc(100% / var(--timeslot-count));
+  height: 30px;
+}
