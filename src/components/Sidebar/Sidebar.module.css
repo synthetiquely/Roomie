@@ -1,8 +1,12 @@
 :root {
   --sidebar-container-background-color: hsl(115, 74%, 76%);
+  --sidebar-container-z-index: 2;
 }
 
 .container {
-  grid-area: aside;
+  grid-area: sidebar;
+  position: sticky;
+  left: 0;
+  z-index: var(--sidebar-container-z-index);
   background-color: var(--sidebar-container-background-color);
 }

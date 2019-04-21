@@ -1,5 +1,16 @@
 .container {
   position: relative;
   grid-area: content;
+  display: grid;
+  grid-template-columns: 245px auto;
+  grid-template-rows: 46px auto;
+  grid-template-areas:
+    "day timeline"
+    "sidebar calendar";
   overflow-x: auto;
+}
+
+.day {
+  width: 100%;
+  grid-template: "day";
 }

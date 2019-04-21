@@ -9,8 +9,9 @@ export function Layout() {
   return (
     <>
       <Header />
-      <Sidebar />
       <main className={Styles.container}>
+        <Sidebar />
+        <div className={Styles.day} />
         <Navbar />
         <Calendar />
       </main>
