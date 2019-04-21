@@ -4,7 +4,7 @@
 }
 
 .container {
-  background-color: var(--timeslot-container-background-color);
   width: calc(100% / var(--timeslot-count));
   height: 30px;
+  background-color: var(--timeslot-container-background-color);
 }
