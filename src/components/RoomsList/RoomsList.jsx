@@ -7,7 +7,7 @@ export function RoomsList() {
   return (
     <ul className={Styles.container}>
       {ROOMS.map(room => (
-        <Room key={room.id} />
+        <Room key={room.id} {...room} />
       ))}
     </ul>
   );

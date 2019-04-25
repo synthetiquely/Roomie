@@ -8,6 +8,6 @@ export function Room() {
 
 Room.propTypes = {
   title: PropTypes.string.isRequired,
-  capacity: PropTypes.number.isRequired,
+  occupancy: PropTypes.number.isRequired,
   floor: PropTypes.number.isRequired,
 };
