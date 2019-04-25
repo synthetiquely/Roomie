@@ -37,7 +37,9 @@
   outline-color: (--color-primary--active);
   background-color: var(--timeslot-slot-background-color);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition-property: background-color, outline-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .slot:hover {

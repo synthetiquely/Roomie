@@ -13,7 +13,7 @@ module.exports = {
     },
     "plugin/stylelint-group-selectors": true,
     "sh-waqar/declaration-use-variable": [["/color/", "z-index", "font-size"]],
-    "plugin/no-low-performance-animation-properties": true,
+    "plugin/no-low-performance-animation-properties": [true, { ignore: "paint-properties" }],
     "plugin/z-index-value-constraint": {
       min: 1,
       max: 5,
