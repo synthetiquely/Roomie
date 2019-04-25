@@ -1,5 +1,5 @@
 :root {
-  --timeslot-count: 16;
+  --timeslot-count: 15;
 
   /* Free slot */
   --timeslot-slot-background-color: var(--color-white);

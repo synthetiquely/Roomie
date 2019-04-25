@@ -20,7 +20,6 @@ export function Timeslots() {
       <Timeslot />
       <Timeslot />
       <Timeslot />
-      <Timeslot />
     </ul>
   );
 }
