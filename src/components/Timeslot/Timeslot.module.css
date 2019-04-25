@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
   border: none;
-  outline-color: (--color-primary--active);
+  outline-color: var(--color-primary--active);
   background-color: var(--timeslot-slot-background-color);
   cursor: pointer;
   transition-property: background-color, outline-color;
