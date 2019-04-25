@@ -17,18 +17,6 @@
   height: 30px;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .slot {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline-color: (--color-primary--active);
-    background-color: var(--timeslot-slot-background-color);
-    cursor: pointer;
-    transition: none;
-  }
-}
-
 .slot {
   position: relative;
   width: 100%;
@@ -68,23 +56,36 @@
   background-size: contain;
 }
 
-.slot--occupied {
+.slot--occupied,
+.slot:disabled {
   outline-color: var(--color-secondary--active);
   background-color: var(--timeslot-slot-background-color--occupied);
   cursor: default;
 }
 
-.slot--occupied:hover {
+.slot--occupied:hover,
+.slot:disabled:hover {
   background-color: var(--timeslot-slot-background-color--occupied--hover);
 }
 
 .slot--occupied:focus,
-.slot--occupied:active {
+.slot--occupied:active,
+.slot:disabled:focus,
+.slot:disabled:active {
   background-color: var(--timeslot-slot-background-color--occupied--active);
 }
 
 .slot--occupied:hover::after,
 .slot--occupied:focus::after,
-.slot--occupied:active::after {
+.slot--occupied:active::after,
+.slot:disabled:hover::after,
+.slot:disabled:focus::after,
+.slot:disabled:active::after {
   background: none;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .slot {
+    transition: none;
+  }
 }

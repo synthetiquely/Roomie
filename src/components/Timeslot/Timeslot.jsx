@@ -6,7 +6,7 @@ import Styles from "./Timeslot.module.css";
 export function Timeslot({ isOccupied }) {
   return (
     <li className={Styles.container}>
-      <button className={classnames(Styles.slot, { [Styles["slot--occupied"]]: isOccupied })} />
+      <button disabled={isOccupied} className={classnames(Styles.slot, { [Styles["slot--occupied"]]: isOccupied })} />
     </li>
   );
 }
