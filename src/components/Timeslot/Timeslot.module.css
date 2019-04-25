@@ -1,10 +1,88 @@
 :root {
-  --timeslot-container-background-color: hsl(0, 0%, 75%);
   --timeslot-count: 16;
+
+  /* Free slot */
+  --timeslot-slot-background-color: var(--color-white);
+  --timeslot-slot-background-color--hover: var(--color-primary--hover);
+  --timeslot-slot-background-color--active: var(--color-primary--active);
+
+  /* Occupied slot */
+  --timeslot-slot-background-color--occupied: var(--color-gray-300);
+  --timeslot-slot-background-color--occupied--hover: var(--color-gray-400);
+  --timeslot-slot-background-color--occupied--active: var(--color-gray-500);
 }
 
 .container {
   width: calc(100% / var(--timeslot-count));
   height: 30px;
-  background-color: var(--timeslot-container-background-color);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .slot {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline-color: (--color-primary--active);
+    background-color: var(--timeslot-slot-background-color);
+    cursor: pointer;
+    transition: none;
+  }
+}
+
+.slot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline-color: (--color-primary--active);
+  background-color: var(--timeslot-slot-background-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slot:hover {
+  background-color: var(--timeslot-slot-background-color--hover);
+}
+
+.slot:focus,
+.slot:active {
+  background-color: var(--timeslot-slot-background-color--active);
+}
+
+.slot:hover::after,
+.slot:focus::after,
+.slot:active::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url(./assets/icon__plus.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slot--occupied {
+  outline-color: var(--color-secondary--active);
+  background-color: var(--timeslot-slot-background-color--occupied);
+  cursor: default;
+}
+
+.slot--occupied:hover {
+  background-color: var(--timeslot-slot-background-color--occupied--hover);
+}
+
+.slot--occupied:focus,
+.slot--occupied:active {
+  background-color: var(--timeslot-slot-background-color--occupied--active);
+}
+
+.slot--occupied:hover::after,
+.slot--occupied:focus::after,
+.slot--occupied:active::after {
+  background: none;
 }

@@ -1,9 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 import Styles from "./Timeslot.module.css";
 
-export function Timeslot() {
-  return <li className={Styles.container} />;
+export function Timeslot({ isOccupied }) {
+  return (
+    <li className={Styles.container}>
+      <button className={classnames(Styles.slot, { [Styles["slot--occupied"]]: isOccupied })} />
+    </li>
+  );
 }
 
 Timeslot.propTypes = {
