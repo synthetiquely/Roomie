@@ -1,5 +1,6 @@
 :root {
-  --sidebar-container-background-color: hsl(115, 74%, 76%);
+  --sidebar-container-background-color: var(--color-white);
+  --sidebar-container-box-shadow-color: var(--color-gray-100);
   --sidebar-container-z-index: 2;
 }
 
@@ -9,4 +10,5 @@
   left: 0;
   grid-area: sidebar;
   background-color: var(--sidebar-container-background-color);
+  box-shadow: 1px 0 0 0 var(--sidebar-container-box-shadow-color);
 }

@@ -1,5 +1,5 @@
 :root {
-  --calendar-container-background-color: hsl(224, 75%, 76%);
+  --calendar-container-background-color: var(--color-gray-200);
 }
 
 .container {

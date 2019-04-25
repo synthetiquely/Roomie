@@ -1,6 +1,6 @@
 :root {
   --hour-text-font-size: 11px;
-  --hour-line-color: hsl(0, 0%, 90%);
+  --hour-line-color: var(--color-gray-900);
 }
 
 .container {
