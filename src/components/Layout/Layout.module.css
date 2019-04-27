@@ -13,4 +13,5 @@
 .day {
   width: 100%;
   grid-template: "day";
+  border-bottom: 1px solid var(--navbar-container-border-color);
 }

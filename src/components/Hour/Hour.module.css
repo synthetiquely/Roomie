@@ -1,5 +1,6 @@
 :root {
   --hour-text-font-size: 11px;
+  --hour-text-line-height: 1.2;
   --hour-line-color: var(--color-gray-900);
 }
 
@@ -21,6 +22,11 @@
 
 .text {
   font-size: var(--hour-text-font-size);
-  line-height: 13px;
+  line-height: var(--hour-text-line-height);
   letter-spacing: 0.4px;
+  font-weight: bold;
+}
+
+.container.disabled .text {
+  color: var(--color-disabled);
 }

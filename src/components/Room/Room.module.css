@@ -1,4 +1,35 @@
+:root {
+  --room-title-font-size: 15px;
+  --room-title-line-height: 1.1;
+  --room-occupancy-font-size: 13px;
+  --room-occupancy-line-height: 1.3;
+}
+
 .container {
   height: 60px;
   padding: 15px 0;
+}
+
+.title {
+  font-size: var(--room-title-font-size);
+  line-height: var(--room-title-line-height);
+}
+
+.title:hover,
+.title:focus {
+  color: var(--color-primary);
+}
+
+.title.active {
+  color: var(--color-primary--active);
+}
+
+.occupancy {
+  font-size: var(--room-occupancy-font-size);
+  line-height: var(--room-occupancy-line-height);
+}
+
+.container--disabled .title,
+.container--disabled .occupancy {
+  color: var(--color-disabled);
 }

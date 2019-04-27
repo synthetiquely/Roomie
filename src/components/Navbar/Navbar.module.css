@@ -1,6 +1,6 @@
 :root {
   --navbar-container-background-color: var(--color-white);
-  --navbar-container-box-shadow-color: var(--color-gray-100);
+  --navbar-container-border-color: var(--color-gray-100);
 }
 
 .container {
@@ -9,5 +9,5 @@
   width: 100%;
   display: flex;
   background-color: var(--navbar-container-background-color);
-  box-shadow: 0 -1px 0 0 var(--navbar-container-box-shadow-color);
+  border-bottom: 1px solid var(--navbar-container-border-color);
 }

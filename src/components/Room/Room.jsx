@@ -2,8 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import Styles from "./Room.module.css";
 
-export function Room() {
-  return <li className={Styles.container}>Room</li>;
+export function Room({ title, occupancy }) {
+  return (
+    <li className={Styles.container}>
+      <h3 className={Styles.title}>{title}</h3>
+      <span className={Styles.occupancy}>до {occupancy} человек</span>
+    </li>
+  );
 }
 
 Room.propTypes = {
