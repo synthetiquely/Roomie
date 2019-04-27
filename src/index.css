@@ -1,10 +1,51 @@
+:root {
+  --base-font-family: "Noto Sans", sans-serif;
+  --base-font-size: 16px;
+  --base-line-height: 1.2;
+
+  --headline-font-family: "Noto Serif", serif;
+  --headline-font-size: 1.2rem;
+  --headline-line-height: 1;
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 15%);
+
+  --color-gray-100: hsl(210, 16%, 93%);
+  --color-gray-200: hsl(220, 20%, 97%);
+  --color-gray-300: hsl(210, 31%, 87%);
+  --color-gray-400: hsl(209, 19%, 66%);
+  --color-gray-500: hsl(209, 19%, 66%);
+  --color-gray-600: hsl(212, 8%, 56%);
+  --color-gray-900: rgba(19, 100, 205, 0.1);
+
+  --color-blue-100: hsl(211, 100%, 50%);
+  --color-blue-200: hsl(219, 100%, 50%);
+  --color-blue-300: hsl(243, 100%, 50%);
+  --color-blur-400: hsl(247, 100%, 50%);
+
+  --color-primary: var(--color-blue-100);
+  --color-primary--hover: var(--color-blue-200);
+  --color-primary--active: var(--color-blue-300);
+
+  --color-secondary: var(--color-gray-100);
+  --color-secondary--hover: var(--color-gray-200);
+  --color-secondary-active: var(--color-gray-500);
+
+  --color-disabled: var(--color-gray-600);
+
+  --header-height: 71px;
+  --navbar-height: 46px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--base-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  color: var(--color-black);
 }
 
 html,
@@ -28,28 +69,15 @@ body,
   box-sizing: border-box;
 }
 
-:root {
-  --color-white: hsl(0, 0%, 100%);
-  --color-gray-100: hsl(210, 16%, 93%);
-  --color-gray-200: hsl(220, 20%, 97%);
-  --color-gray-300: hsl(210, 31%, 87%);
-  --color-gray-400: hsl(209, 19%, 66%);
-  --color-gray-500: hsl(209, 19%, 66%);
-  --color-gray-900: rgba(19, 100, 205, 0.1);
-
-  --color-blue-100: hsl(211, 100%, 50%);
-  --color-blue-200: hsl(219, 100%, 50%);
-  --color-blue-300: hsl(243, 100%, 50%);
-  --color-blur-400: hsl(247, 100%, 50%);
-
-  --color-primary: var(--color-blue-100);
-  --color-primary--hover: var(--color-blue-200);
-  --color-primary--active: var(--color-blue-300);
-
-  --color-secondary: var(--color-gray-100);
-  --color-secondary--hover: var(--color-gray-200);
-  --color-secondary-active: var(--color-gray-500);
-
-  --header-height: 71px;
-  --navbar-height: 46px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.2em 0;
+  font-family: var(--headline-font-family);
+  font-size: var(--headline-font-size);
+  line-height: var(--headline-line-height);
+  font-weight: bold;
 }
