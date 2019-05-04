@@ -1,11 +1,13 @@
 :root {
   --navbar-container-background-color: var(--color-white);
   --navbar-container-border-color: var(--color-gray-100);
+  --navbar-container-z-index: 3;
 }
 
 .container {
   position: sticky;
   top: 0;
+  z-index: var(--navbar-container-z-index);
   width: 100%;
   display: flex;
   background-color: var(--navbar-container-background-color);
