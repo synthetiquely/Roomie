@@ -4,7 +4,7 @@ import { Sidebar } from "../Sidebar/Sidebar";
 import { Calendar } from "../Calendar/Calendar";
 import Styles from "./Dashboard.module.css";
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <main className={Styles.container}>
       <Sidebar />
