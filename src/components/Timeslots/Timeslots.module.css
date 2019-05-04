@@ -10,7 +10,7 @@
 .container::after {
   content: "";
   display: block;
-  width: 25px;
+  width: calc(100% / var(--timeslot-count) / 2);
   height: auto;
   background-color: var(--color-white);
 }
